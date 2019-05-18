@@ -17,9 +17,9 @@ class EmailParser
     
    
     if parsed = @x.split(",")
-      parsed
+      parsed.uniq
     elsif parsed = @x.split(/\s|\s\b/)
-      parsed
+      parsed.uniq
       binding.pry
     end
     parsed

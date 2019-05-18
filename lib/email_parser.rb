@@ -13,12 +13,8 @@ attr_accessor :emails
   end
   
   def parse
-      parsed = @x.split(/,\s|\s\b/) #|| @x.split(/\s|\s\b/)
-      #   e = parsed.uniq
-      # elsif parsed = @x.split(/\s|\s\b/)
+      parsed = @x.split(/,\s|\s\b/) 
         e = parsed.uniq
-        binding.pry
-    
       e
   end
   

@@ -13,11 +13,9 @@ class EmailParser
   end
   
   def parse
-    e = parsed.uniq
-    while @x != parsed.uniq
-      if parsed = @x.split(",")
-        e = parsed.uniq
-      elsif parsed = @x.split(/\s|\s\b/)
+      parsed = @x.split(",") && @x.split(/\s|\s\b/)
+      #   e = parsed.uniq
+      # elsif parsed = @x.split(/\s|\s\b/)
         e = parsed.uniq
         binding.pry
       end

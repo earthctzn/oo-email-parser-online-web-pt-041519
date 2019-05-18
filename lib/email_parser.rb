@@ -13,15 +13,15 @@ class EmailParser
   end
   
   def parse
-    #parsed = emails.split(",") || parsed = emails.split(" ")
-    
-   
-    if parsed = @x.split(",")
-      e = parsed.uniq
-    elsif parsed = @x.split(/\s|\s\b/)
-      e = parsed.uniq
-      binding.pry
-    end
-    e
+    while 
+      if parsed = @x.split(",")
+        e = parsed.uniq
+      elsif parsed = @x.split(/\s|\s\b/)
+        e = parsed.uniq
+        binding.pry
+      end
+      e
   end
+  
+  
 end

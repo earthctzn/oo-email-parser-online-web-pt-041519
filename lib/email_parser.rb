@@ -6,7 +6,7 @@ require 'pry'
 
 class EmailParser
 
- attr_accessor :emails 
+attr_accessor :emails 
 
   def initialize(x)
     @x = x  
@@ -18,7 +18,7 @@ class EmailParser
       # elsif parsed = @x.split(/\s|\s\b/)
         e = parsed.uniq
         binding.pry
-      end
+    
       e
   end
   

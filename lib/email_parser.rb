@@ -20,6 +20,7 @@ class EmailParser
         e = parsed.uniq
         binding.pry
       end
+    end
       e
   end
   

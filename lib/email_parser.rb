@@ -22,6 +22,6 @@ class EmailParser
       parsed
       binding.pry
     end
-    e
+    parsed
   end
 end

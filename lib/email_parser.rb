@@ -13,6 +13,7 @@ class EmailParser
   end
   
   def parse
+    e = parsed.uniq
     while @x != parsed.uniq
       if parsed = @x.split(",")
         e = parsed.uniq

@@ -13,7 +13,7 @@ class EmailParser
   end
   
   def parse
-    while 
+    while @x != e 
       if parsed = @x.split(",")
         e = parsed.uniq
       elsif parsed = @x.split(/\s|\s\b/)
